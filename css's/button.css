@@ -1,0 +1,24 @@
+.link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+a:is(:link,:active).active {    
+    text-decoration: underline !important;
+
+}
+
+.link{
+    text-decoration: none !important; 
+    color: white !important;
+    text-transform: capitalize;
+}

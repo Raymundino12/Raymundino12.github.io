@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script type="text/javascript" src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css's/style.css">
+    <link rel="stylesheet" href="css's/button.css">
+    <link rel="stylesheet" href="css's/mosaico.css">
+    <link rel="stylesheet" href="css's/text.css">
+
+    <title>Su Iglesia Plenitud</title>
+</head>
+
+<header>
+    <nav>
+
+        <div class="logo">
+        <a href="index.html"><img src="imagenes/logo.png" alt="logo"></a>
+        </div>
+
+
+        <div class="toggle" >
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html#hola" class="link">Hola!</a></li>
+            <li><a href="Comunidad.html" class="link">Comunidad</a></li>
+            <li><a href="voluntarios.html" class="link">Voluntarios</a></li>
+            <li><a href="diezmos.html" class="link active">Diezmos/Ofrendas</a></li>
+            <li><a href="Oracion.html" class="link">Oración</a></li>
+            <li><a href="contacto.html" class="link">Contacto</a></li>
+        </ul>
+    </nav>
+
+   
+
+    <script>
+        $(function(){
+            $(".toggle").on("click", function(){
+                if($(".menu").hasClass("active")){
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html("<i class='fa-solid fa-bars'></i>");
+                } else{
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<i class='fa-solid fa-x'></i>");
+                }
+            });
+        });
+    </script>
+
+</header>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="texto gris" style="font-size: 20px;">
+        <p class="mediano aqua" style="text-align: center; margin-bottom: 15px;">¡Gracias por tu Generosidad!</p>
+
+        <p><span class="oscuro" style="font-size: 25px;">Gracias por ayudarnos a expresar el Amor de Dios</span>, 
+        con tus diezmos y ofrendas la Iglesia sigue avanzando en esta región de México; 
+        también cada año aportamos para que las Misiones sigan operando, entre ellas en Israel y otras áreas del mundo.</p>
+        
+        <p>Como Iglesia hemos aprendido a Dar con Fe, Gratitud y Generosidad.</p>
+        <br>
+        
+        <p><span class="oscuro" style="font-size: 25px;">Formas para realizar tus Diezmos, Ofrendas y Primicias:</span></p>
+        
+        <p><span class="aqua" style="font-size: 30px;"> -Transferencia BANAMEX </span><br>
+        CLABE:    002813700257520721 <br>
+        Sucursal: 7002 <br>
+        Cuenta:   5752072 <br>
+        Nombre: Generación de Proezas A.C. </p>
+        <br>
+        <p><span class="aqua" style="font-size: 30px;"> -Tarjeta Bancaria BBVA BANCOMER </span><br>
+        4152-3135-3943-0061 <br>
+        Nombre: Juan Eduardo Correa Cárcamo</p>
+        <br>
+        
+        <p class="oscuro0" style="text-align: center; font-size: 30px;">Pero el generoso pensará generosidades, y por sus generosidades será exaltado. <br>
+        Isaías 32:8</p>
+        
+    </div>
+
+</body>
+
+<footer class="pie">
+    <div class="text-center" style="background-color: white;">
+      <div class="card-header" style="background-color: gray;">
+        <i class="fa-sharp fa-solid fa-phone"></i>888 888 8888
+      </div>
+      <div class="card-body" style="background-color: #26BDB8;">
+        <h5>INFORMACIÓN Y REUNIONES</h5>
+        <div>
+          <p><b>DOMINGO</b><br>
+          <b> 10:30 am - 1a Reunión</b> (Presencial)<br>
+          <b>12:30 pm - 2a Reunión</b> (Presencial y Online)
+        </div>
+        <div>
+          <p><b>MIÉRCOLES</b> <br>
+          <b>7:30 am </b>(Presencial y Online)<br>
+          <b>Unica Reunión</b></p>
+        </div>
+        <div class="">
+          <p><b>DIRECCIÓN: </b></p>
+          <p>Avenida Hidalgo 1703, <br>esquina Calle Nueva, Col. Martock <br>CP 89170 Tampico, Tamaulipas.<br></p>
+        </div>
+      </div>
+        <p style="margin: 0; background-color: #26BDB8;  text-align: start; font-size: 22px; margin-top: 0; color: white; border-bottom: #26BDB8 solid; border-width: 20px;" > 
+        <a href="https://www.facebook.com/SuIglesiaPlenitud" style="text-decoration: none;" class="fa-brands fa-facebook-f"></a> 
+        <a href="https://www.instagram.com/suiglesiaplenitud/?hl=es" style="text-decoration: none;" class="fa-brands fa-instagram"></a>
+        <span style="color: #26BDB8;">...</span>Su Iglesia Plenitud®</p>
+      </div>
+</footer>
+
+</html>

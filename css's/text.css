@@ -1,0 +1,61 @@
+.gris{
+    color: gray;
+}
+
+.oscuro{
+    color: rgb(87, 87, 87);
+}
+
+.claro{
+    color: rgb(170, 170, 170);
+}
+
+.aqua{
+    color: #26BDB8;
+}
+
+.grande{
+    font-size: 60px;
+    margin-top: 1px;
+    margin-bottom: 20px;
+}
+
+.mediano{
+    font-size: 40px;
+    margin: 0;
+}
+
+.chiquito{
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-decoration: underline; 
+    font-size: 25px; 
+    color: rgb(160, 160, 160); 
+    margin-top: 10px;
+}
+
+.texto p{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+  
+.speech .texto b{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.Hola p{
+    color: gray
+}
+
+.versiculo, .versiculo p{
+    background: gray;
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+.speech img{
+    width: 100%;
+    height: 700px;
+}

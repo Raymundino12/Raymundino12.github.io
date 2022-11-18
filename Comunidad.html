@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script type="text/javascript" src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css's/style.css">
+    <link rel="stylesheet" href="css's/button.css">
+    <link rel="stylesheet" href="css's/mosaico.css">
+    <link rel="stylesheet" href="css's/text.css">
+
+    <title>Su Iglesia Plenitud</title>
+</head>
+
+<header>
+    <nav>
+
+        <div class="logo">
+        <a href="index.html"><img src="imagenes/logo.png" alt="logo"></a>
+        </div>
+
+
+        <div class="toggle" >
+            <a href="Oracion.html"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html#hola" class="link">Hola!</a></li>
+            <li><a href="Comunidad.html" class="link active">Comunidad</a></li>
+            <li><a href="voluntarios.html" class="link">Voluntarios</a></li>
+            <li><a href="diezmos.html" class="link">Diezmos/Ofrendas</a></li>
+            <li><a href="Oracion.html" class="link">Oración</a></li>
+            <li><a href="contacto.html" class="link">Contacto</a></li>
+        </ul>
+    </nav>
+
+   
+
+    <script>
+        $(function(){
+            $(".toggle").on("click", function(){
+                if($(".menu").hasClass("active")){
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html("<i class='fa-solid fa-bars'></i>");
+                } else{
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<i class='fa-solid fa-x'></i>");
+                }
+            });
+        });
+    </script>
+
+</header>
+
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="texto gris" style="font-size: 20px;">
+        <p>
+            <span class="aqua mediano">Plenitud</span> Es una comunidad de personas que necesitamos de Dios, 
+            lo hemos conocido a través Jesús, el Hijo de Dios, 
+            sabemos que Dios nos ama tanto que dio su hijo por Amor de cada uno de nosotros, 
+            Incluyéndote a ti, sí, leíste bien <span class="aqua" style="font-size:20px;">“DIOS TE AMA”</span>:_____________(Coloca tu nombre) 
+            No estás solo, cada día puedes disfrutar:
+        </p>
+        <p>1 - Amor de Dios Padre.</p>
+        <p>2 - La Gracia del Hijo, Jesús, el hijo de Dios.</p>
+        <p>3 - El Poder del Espíritu Santo.</p>
+        <p>4 - La Palabra de Dios (Promesas, Instrucciones y muchas historias más que demostrarán cuanto Dios te Ama).</p>
+
+        <p class="oscuro" style="font-size: 30px; margin-top: 40px; margin-bottom: 40px;">Si te has preguntado... <br>¿Qué necesito para ir a la Iglesia?, o ¿ser parte de ella?, o ¿Disfrutar del Amor de Dios?</p>
+
+        <p>1 - Solo ven y asiste a la reunión que más se ajuste a tu agenda.</p>
+        <p>2 - Conéctate, te animamos a que te sumes a grupos de conexión, 
+          tenemos en diferentes áreas de la ciudad y tienen el propósito de hacer amigos, 
+          estudiar juntos la palabra de Dios y crecer juntos, aprendiendo, sirviendo y 
+          expresando el amor de Dios en cada esfera de nuestras vidas.</p>
+        <p>3 - Creer, lo único que necesitas para disfrutar el Amor de Dios es creer en Jesús, 
+          el hijo de Dios como Señor y Salvador de tu Vida.</p>
+    </div>
+</body>
+
+<footer class="pie">
+    <div class="text-center" style="background-color: white;">
+      <div class="card-header" style="background-color: gray;">
+        <a href="#" class="link" style="font-size: 20px;">Oración de Fe</a>
+      </div>
+      <div class="card-body" style="background-color: #26BDB8;">
+        <h5>INFORMACIÓN Y REUNIONES</h5>
+        <div>
+          <p><b>DOMINGO</b><br>
+          <b> 10:30 am - 1a Reunión</b> (Presencial)<br>
+          <b>12:30 pm - 2a Reunión</b> (Presencial y Online)
+        </div>
+        <div>
+          <p><b>MIÉRCOLES</b> <br>
+          <b>7:30 am </b>(Presencial y Online)<br>
+          <b>Unica Reunión</b></p>
+        </div>
+        <div class="">
+          <p><b>DIRECCIÓN: </b></p>
+          <p>Avenida Hidalgo 1703, <br>esquina Calle Nueva, Col. Martock <br>CP 89170 Tampico, Tamaulipas.<br></p>
+        </div>
+      </div>
+        <p style="margin: 0; background-color: #26BDB8;  text-align: start; font-size: 22px; margin-top: 0; color: white; border-bottom: #26BDB8 solid; border-width: 20px;" > 
+        <a href="https://www.facebook.com/SuIglesiaPlenitud" style="text-decoration: none;" class="fa-brands fa-facebook-f"></a> 
+        <a href="https://www.instagram.com/suiglesiaplenitud/?hl=es" style="text-decoration: none;" class="fa-brands fa-instagram"></a>
+        <span style="color: #26BDB8;">...</span>Su Iglesia Plenitud®</p>
+      </div>
+  </footer>
+
+</html>
