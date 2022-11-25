@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script type="text/javascript" src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css's/style.css">
+    <link rel="stylesheet" href="css's/button.css">
+    <link rel="stylesheet" href="css's/mosaico.css">
+    <link rel="stylesheet" href="css's/text.css">
+
+    <title>Su Iglesia Plenitud</title>
+</head>
+
+<header>
+    <nav>
+
+        <div class="logo">
+        <a href="index.html"><img src="imagenes/logo.png" alt="logo"></a>
+        </div>
+
+
+        <div class="toggle" >
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html#hola" class="link active">Hola!</a></li>
+            <li><a href="Comunidad.html" class="link">Comunidad</a></li>
+            <li><a href="voluntarios.html" class="link">Voluntarios</a></li>
+            <li><a href="diezmos.html" class="link">Diezmos/Ofrendas</a></li>
+            <li><a href="Oracion.html" class="link">Oración</a></li>
+            <li><a href="contacto.html" class="link">Contacto</a></li>
+        </ul>
+    </nav>
+
+   
+
+    <script>
+        $(function(){
+            $(".toggle").on("click", function(){
+                if($(".menu").hasClass("active")){
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html("<i class='fa-solid fa-bars'></i>");
+                } else{
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<i class='fa-solid fa-x'></i>");
+                }
+            });
+        });
+    </script>
+
+</header>
+
+
+<body>
+  <p>.</p>
+  
+  <div class="falso-body">
+    <div class="slider">
+      <div class="slide active">
+        <img src="imagenes/foto1principal.jpg">
+        <div class="info">
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="imagenes/foto2principal.jpg">
+        <div class="info">
+        </div>
+      </div>
+
+
+      <div class="slide">
+        <img src="imagenes/foto3principal.jpg">
+        <div class="info">
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="imagenes/foto4principal.jpg">
+        <div class="info">
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="imagenes/foto5principal.jpg">
+        <div class="info">
+        </div>
+      </div>
+      <div class="slide">
+        <img src="imagenes/foto6principal.jpg">
+        <div class="info">
+        </div>
+      </div>
+      <div class="slide">
+        <img src="imagenes/foto7principal.jpg">
+        <div class="info">
+        </div>
+      </div>
+
+      <div class="navigation">
+        <i class="fa fa-chevron-left"></i>
+        <i class="fa fa-chevron-right"></i>
+      </div>
+      <div class="navigation-visibility">
+        <div class="slide-icon active"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div> 
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      const slider = document.querySelector(".slider");
+      const nextBtn = document.querySelector(".fa-chevron-right");
+      const prevBtn = document.querySelector(".fa-chevron-left");
+      const slides = document.querySelectorAll(".slide");
+      const slideIcons = document.querySelectorAll(".slide-icon");
+      const numberOfSlides = slides.length;
+      var slideNumber = 0;
+
+
+      //next button
+      nextBtn.addEventListener("click", () =>{
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+        slideIcons.forEach((slideIcon) => {
+          slideIcon.classList.remove("active");
+        });
+
+        slideNumber++;
+
+        if(slideNumber > (numberOfSlides - 1)){
+          slideNumber = 0;
+        }
+
+        slides[slideNumber].classList.add("active");
+        slideIcons[slideNumber].classList.add("active");
+      });
+
+      //prev button
+      prevBtn.addEventListener("click", () =>{
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+        slideIcons.forEach((slideIcon) => {
+          slideIcon.classList.remove("active");
+        });
+
+        slideNumber--;
+
+        if(slideNumber < 0){
+          slideNumber = numberOfSlides - 1;
+        }
+
+        slides[slideNumber].classList.add("active");
+        slideIcons[slideNumber].classList.add("active");
+      });
+
+      //autoplay
+      var playSlider;
+
+      var repeater = () => {
+        playSlider = setInterval(function(){
+          slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+        slideIcons.forEach((slideIcon) => {
+          slideIcon.classList.remove("active");
+        });
+
+        slideNumber++;
+
+        if(slideNumber > (numberOfSlides - 1)){
+          slideNumber = 0;
+        }
+
+        slides[slideNumber].classList.add("active");
+        slideIcons[slideNumber].classList.add("active");
+        }, 4000);
+      }
+      repeater();
+
+      //mouse over stop
+      slider.addEventListener("mouseover", () =>{
+        clearInterval(playSlider);
+      });
+
+      //mouse out restart
+      slider.addEventListener("mouseout", () =>{
+        clearInterval(playSlider);
+        repeater();
+      });
+    </script>
+
+  </div>
+
+  <div class="Hola text-center" >
+    <p class="chiquito">Nuestra Misión es:</p>
+    <p class="grande">SER LA MÁXIMA <span style="color: #26BDB8;">EXPRESIÓN</span><br>
+    DEL <span style="color: #26BDB8;">AMOR</span> DE DIOS</p>
+  </div>
+
+  <div class="versiculo text-center" id="hola">
+    <p>Por que de su Plenitud tomamos todos y Gracia sobre Gracia <br>Juan 1:16</p>
+  </div>
+
+  <div class="speech gris" style="font-size: 20px;">
+    <img src="imagenes/holaboton.jpg" alt="">
+    <div class="texto">
+      <p class="mediano aqua">¡Hola!</p>
+
+      <p>Gracias por tu visita esperamos saludarte personalmente, 
+        y que puedas ser parte de una familia en la fe que busca 
+        cada día estar más cerca de la voluntad de Dios.</p>
+
+      <p>Estamos convencidos de que cada persona que conoce el Amor de Dios y abre su corazón 
+        para disfrutar de Él, su vida jamás será igual. Su Amor nos lleva a un nuevo comienzo…
+        Ya sea que disfrutes de su perdón o su Amor incondicional.
+        Sumergirte en Dios, es disfrutar la vida, tu familia, tus amigos y su palabra. 
+        Su Amor te llevará cada día a descubrir tu propósito, produciendo las mejores temporadas de tu vida, 
+        en Plenitud estamos convencidos "Que lo Mejor está por Venir".</p>
+
+      <p>En Plenitud nos gusta ir más profundo en conocer el corazón de Dios, 
+         el poder del Espíritu Santo y la Gracia del Señor Jesucristo. Nos encantaría que tú vayas con nosotros, 
+         te invitamos a descubrir la más grande aventura de tu vida, tomar de Su Plenitud y su Gracia cada día.</p>
+
+      <p class="text-center division">“Porque de su Plenitud tomamos todos y Gracia sobre Gracia” Juan 1.16</p>
+
+      <p class="gris"><b style="margin: 0px;">Con amor y aprecio</b></p>
+
+      <p class="gris"><b style="margin: 0px;">Ps. Lalo y Angie Correa</b> <br><b style="margin: 0px;">Su Iglesia Plenitud</b></p>
+    </div>
+  </div>
+  
+</body>
+
+<footer class="pie">
+    <div class="text-center" style="background-color: white;">
+      <div class="card-header" style="background-color: gray;">
+        <i class="fa-sharp fa-solid fa-phone"></i>888 888 8888
+      </div>
+        <div class="card-body" style="background-color: #26BDB8;">
+          <h5>INFORMACIÓN Y REUNIONES</h5>
+            <div>
+              <p><b>DOMINGO</b><br>
+              <b> 10:30 am - 1a Reunión</b> (Presencial)<br>
+              <b>12:30 pm - 2a Reunión</b> (Presencial y Online)
+            </div>
+            <div>
+              <p><b>MIÉRCOLES</b> <br>
+              <b>7:30 am </b>(Presencial y Online)<br>
+              <b>Unica Reunión</b></p>
+            </div>
+            <div class="">
+              <p><b>DIRECCIÓN: </b></p>
+              <p>Avenida Hidalgo 1703, <br>esquina Calle Nueva, Col. Martock <br>CP 89170 Tampico, Tamaulipas.<br></p>
+            </div>
+          </div>
+          <p style="margin: 0; background-color: #26BDB8;  text-align: start; font-size: 22px; margin-top: 0; color: white; border-bottom: #26BDB8 solid; border-width: 20px;" > 
+          <a href="https://www.facebook.com/SuIglesiaPlenitud" style="text-decoration: none;" class="fa-brands fa-facebook-f"></a> 
+          <a href="https://www.instagram.com/suiglesiaplenitud/?hl=es" style="text-decoration: none;" class="fa-brands fa-instagram"></a>
+          <span style="color: #26BDB8;">...</span>Su Iglesia Plenitud®</p>
+      </div>
+  </footer>
+
+</html>
