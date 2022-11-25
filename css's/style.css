@@ -140,10 +140,29 @@ footer{
     background-repeat: no-repeat;
 }
 
-
+.division
+{
+    font-size: 35px;
+    margin-top: 30px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 30px;
+    border: rgb(82, 82, 82);
+    border-style:solid;
+    border-width: 2px;
+    border-left: white;
+    border-right: white;
+}
 
 
 @media screen and (max-width: 600px) {
+    .cont p
+    {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+
     nav{
         display: block;
         position: fixed;
@@ -164,4 +183,42 @@ footer{
         top: 30px;
         right: 30px;
     }
+
+    .pie .card-body p{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .fa-facebook-f{
+        margin-right: 4% !important;
+    }
+
+    .fa-instagram{
+        margin-right: 6% !important;
+    }
+
+    .fa-phone{
+        margin-right: 5%;
+    }
+
+    .logo a{
+        width: 40%;
+    }
+
+    .division{
+        font-size: 28px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        background-color: #26BDB8;
+        color: white !important;
+        border-style: hidden;
+    }
+
+    .NoSepara{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
 }
